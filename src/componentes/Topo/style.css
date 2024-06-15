@@ -1,0 +1,51 @@
+.topo-modo-claro {
+    background-color: #fff;
+}
+
+.topo-modo-escuro {
+    background-color: #252525;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 5;
+}
+
+#btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.btn-modo-claro {
+    background-color: #fff;
+    border-radius: 25px;
+    border: 2px solid #747272;
+  }
+  
+  .btn-modo-escuro {
+    background-color: #252525;
+    border-radius: 25px;
+    border: 2px solid #fff;
+  }
+
+.logo {
+   max-width: 35px;
+}
+
+.iconesBtn{
+    width: 35px;
+    height: 30px;
+    padding: 5px 3px 0px 3px;
+  
+}
+

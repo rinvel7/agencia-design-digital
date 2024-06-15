@@ -1,0 +1,72 @@
+#secaoExperienciaDeTrabalho {
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .secaoExperienciaDeTrabalho-modo-claro {
+    background-color: #f6f8fc;
+  }
+  
+  .secaoExperienciaDeTrabalho-modo-claro h2 {
+    color: #32333c;
+  }
+  
+  .secaoExperienciaDeTrabalho-modo-claro p {
+    color: #8a8fa3;
+  }
+  
+  .secaoExperienciaDeTrabalho-modo-escuro {
+    background-color: #393838;
+    color: #CCCCCC;
+  }
+  
+  .conteiner-texto h2 {
+    position: relative;
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  
+  .conteiner-texto h2::before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100px;
+    height: 4px;
+    background-color: #feb633;
+  }
+  
+  .conteiner-texto p {
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 770px;
+    width: 100%;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+  
+  .conteiner-cards {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .limitar-secao {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .conteiner-cards {
+      flex-direction: column;
+    }
+  }

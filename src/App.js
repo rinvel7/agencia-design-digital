@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Rodade from "./componentes/Rodape";
+import SecaoBanner from "./componentes/SecaoBanner";
+import SecaoExperienciaTrabalho from "./componentes/SecaoExperienciaTrabalho";
+import Topo from "./componentes/Topo";
+import './App.css'
 
-function App() {
+
+export default function App() {
+  const [temaEscuro, setTemaEscuro] = useState(false)
+
+  const alterarTema = () => {
+    setTemaEscuro(!temaEscuro)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <main>
+        <Topo alterarTema={alterarTema} temaEscuro={temaEscuro} />
+        <SecaoBanner temaEscuro={temaEscuro} />
+        <SecaoExperienciaTrabalho temaEscuro={temaEscuro} />
+        <Rodade temaEscuro={temaEscuro}/>
+      </main>   
   );
 }
 
-export default App;
